@@ -27,15 +27,12 @@ In other words, we give the model some numbers describing a molecule and ask it:
 
 # Project Overview
 
-In this project, I make a use of a publicly available [dataset](https://doi.org/10.5281/zenodo.3686212) published by [Boobier et al Nature Communications 2020](https://www.nature.com/articles/s41467-020-19594-z) of organic molecules in different solvents (water, ethanol, benzene, acetone), along with the physicochemical descriptors described in the introduction. I turn `LogS` into classes:
-    - soluble = `LogS >= -2`
-    - insoluble = `LogS < -2`
-How soluble is this? (numeric LogS)
+In this project, I make a use of a publicly available [dataset](https://doi.org/10.5281/zenodo.3686212) published by [Boobier et al Nature Communications 2020](https://www.nature.com/articles/s41467-020-19594-z) of organic molecules in different solvents (water, ethanol, benzene, acetone), along with the physicochemical descriptors described in the introduction. 
 
 I train models: 
-    - logistic regression (linear baseline)
-    - XGBoost (tree model)
-    - MLPClassifier (tiny neural net) 
+
+    - Partial least squares (linear baseline)
+    - Random forest, XGBoost (tree model)
 to predict whether a molecule will dissolve in water.
 
 # 🛠️ Tech Stack
@@ -87,7 +84,7 @@ curl -s -X POST http://solubility-env.eba-utpwak55.eu-west-1.elasticbeanstalk.co
 And the result:
 <figure>
 <p align="center">
-  <img src="images/solubility_true.png" width="200" />
+  <img src="images/solubility_true.png" width="500" />
 </p>
   <figcaption align="center"><b>Figure.</b> Result of an example query.</figcaption>
 </figure>
@@ -255,9 +252,9 @@ curl -s -X POST http://solubility-env.eba-utpwak55.eu-west-1.elasticbeanstalk.co
 And it works! 🎉
 <figure>
 <p align="center">
-  <img src="images/solubility_docker_AWSElasticBeanstalk.png" width="200" />
+  <img src="images/solubility_docker_AWSElasticBeanstalk.png" width="500" />
 </p>
-  <figcaption align="center"><b>Figure.</b> Result of an example queries,</figcaption>
+  <figcaption align="center"><b>Figure.</b> Result of an example queries.</figcaption>
 </figure>
 
 
