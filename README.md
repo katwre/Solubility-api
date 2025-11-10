@@ -129,10 +129,10 @@ Solubility/
 ├── src/
     ├── train.py # script that trains the model and saves it to a model with pickle
     └── predict.py # script that loads the model and serves it via a web service with flask
+├── models/ # saved regression models using pickle
 ├── images/ # images used for the readme
 ├── data/ # input datasets
     └── water_set_narrow_descriptors.csv # our input file
-├── output/ # output models
 ├── Dockerfile # instructions to build the docker image
 ├── Pipfile # library dependencies
 ├── Pipfile.lock # library dependencies
