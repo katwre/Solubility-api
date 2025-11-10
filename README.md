@@ -47,7 +47,7 @@ I experimented with several regression models — Partial Least Squares (baselin
 
 **Backend**
 
-🌐  Flask (lightweight WSGI web application framework)
+🌐  Flask (lightweight WSGI web application framework)  
 🐴  gunicorn (python WSGI HTTP server for unix)
 
 **MLOps | Deployment**
