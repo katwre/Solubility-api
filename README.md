@@ -47,16 +47,16 @@ I experimented with several regression models — Partial Least Squares (baselin
 
 **Backend**
 
-🌐  Flask  
-🚀  gunicorn  
+🌐  Flask (lightweight WSGI web application framework)
+🐴  gunicorn (python WSGI HTTP server for unix)
 
 **MLOps | Deployment**
 
 🐳  Docker  
-☁️  AWS Elastic Beanstalk
+☁️  AWS Elastic Beanstalk (AWS web app deployment platform)
 
 
-# 🚀 Results (for users)
+# Results (for users)
 
 If the installation steps make your eyes glaze over, but you actually know how solubility works, test a few molecules via API.
 
@@ -117,7 +117,7 @@ And the result:
 </figure>
 
 
-# 🚀 Quick Start (for developers)
+# Quick Start (for developers)
 
 ### Organization of the files 
 
