@@ -56,7 +56,7 @@ I experimented with several regression models — Partial Least Squares (baselin
 ☁️  AWS Elastic Beanstalk (AWS web app deployment platform)
 
 
-# Results (for users)
+# Quick start
 
 If the installation steps make your eyes glaze over, but you actually know how solubility works, test a few molecules via API.
 
@@ -112,12 +112,12 @@ curl -s -X POST http://solubility-env.eba-utpwak55.eu-west-1.elasticbeanstalk.co
 And the result:
 <figure>
 <p align="center">
-  <img src="images/solubility_true.png" width="700" />
+  <img src="images/example_responce_true.gif" width="900" />
 </p>
 </figure>
 
 
-# Quick Start (for developers)
+# Installation
 
 ### Organization of the files 
 
@@ -138,8 +138,6 @@ Solubility/
 ├── Pipfile.lock # library dependencies
 └── README.md
 ```
-
-### Installation
 
 #### Locally
 
@@ -170,7 +168,7 @@ pip install gunicorn
 gunicorn --bind 0.0.0.0:9696 predict:app
 ```
 
-6. And run the example!
+6. Test your container:
 ```{bash}
 curl -s -X POST http://127.0.0.1:9696/predict \
   -H "Content-Type: application/json" \
@@ -199,7 +197,9 @@ curl -s -X POST http://127.0.0.1:9696/predict \
 ```
 You should get a result such as:
 ```{bash}
+[....]
 {"predicted_solubility":-1.4,"soluble":true}
+[....]
 ```
 
 7. To exit the virtual environment:
@@ -278,7 +278,7 @@ curl -s -X POST http://solubility-env.eba-utpwak55.eu-west-1.elasticbeanstalk.co
 ```
 <figure>
 <p align="center">
-  <img src="images/solubility_docker_AWSElasticBeanstalk.png" width="700" />
+  <img src="images/example_health_responce_false.gif" width="900" />
 </p>
 </figure>
 
