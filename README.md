@@ -112,7 +112,7 @@ curl -s -X POST http://solubility-env.eba-utpwak55.eu-west-1.elasticbeanstalk.co
 And the result:
 <figure>
 <p align="center">
-  <img src="images/example_responce_true.gif" width="900" />
+  <img src="images/example_responce_true_fixed.gif" width="900" />
 </p>
 </figure>
 
@@ -278,7 +278,7 @@ curl -s -X POST http://solubility-env.eba-utpwak55.eu-west-1.elasticbeanstalk.co
 ```
 <figure>
 <p align="center">
-  <img src="images/example_health_responce_false.gif" width="900" />
+  <img src="images/example_health_responce_false_fixed.gif" width="900" />
 </p>
 </figure>
 
