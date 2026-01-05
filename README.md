@@ -117,6 +117,12 @@ And the result:
 </figure>
 
 
+⚠️ **Service availability note:** 
+
+This service runs on AWS Elastic Beanstalk and may be temporarily offline to limit cloud costs. All functionality can be reproduced locally using gunicorn or Docker.
+
+
+
 # Installation
 
 ### Organization of the files 
